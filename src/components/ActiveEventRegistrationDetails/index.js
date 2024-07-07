@@ -4,7 +4,7 @@ const registrationStatus = {
   registrationsClosed: 'REGISTRATIONS_CLOSED',
 }
 const ActiveEventRegistrationDetails = props => {
-  const {activeEventRegistrationStatus} = props
+  const {ActiveEventRegistrationStatus} = props
 
   const renderNoActiveEventView = () => (
     <p className="No-Active-Event-description">
@@ -13,18 +13,17 @@ const ActiveEventRegistrationDetails = props => {
   )
 
   const renderRegistrationClosedView = () => (
-    <>
-      <div className="view-container">
-        <img
-          src="https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png"
-          alt="registrations closed"
-        />
-      </div>
+    <div className="view-container">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/events-registrations-closed-img.png"
+        alt="registrations closed"
+      />
+
       <h1 className="registrations-closed-heading">
         Registrations Are Closed Now
       </h1>
       <p className="">Stay tuned. We will reopen the registrations soon!</p>
-    </>
+    </div>
   )
 
   const renderRegisteredView = () => (
@@ -33,7 +32,7 @@ const ActiveEventRegistrationDetails = props => {
         src="https://assets.ccbp.in/frontend/react-js/events-regestered-img.png"
         alt="registered"
       />
-      <p className="">You have already registered for event</p>
+      <h1 className="">You have already registered for event</h1>
     </div>
   )
 
@@ -49,7 +48,7 @@ const ActiveEventRegistrationDetails = props => {
   )
 
   const renderAciveEventRegistrationDetails = () => {
-    switch (activeEventRegistrationStatus) {
+    switch (ActiveEventRegistrationStatus) {
       case registrationStatus.yetToRegister:
         return renderYetRegisteredView()
       case registrationStatus.registered:
@@ -60,6 +59,7 @@ const ActiveEventRegistrationDetails = props => {
         return renderNoActiveEventView()
     }
   }
+
   return (
     <div className="registration-status-container">
       {renderAciveEventRegistrationDetails()}

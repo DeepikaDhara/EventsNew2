@@ -2,6 +2,8 @@ import {Component} from 'react'
 
 import ActiveEventRegistrationDetails from '../ActiveEventRegistrationDetails'
 
+import EventItem from '../EventItem'
+
 const eventsList = [
   {
     id: 'f9bb2373-b80e-46b8-8219-f07217b9f3ce',
@@ -55,6 +57,7 @@ class Events extends Component {
   state = {
     activeEventId: '',
   }
+
   getActiveEventRegistrationStatus = () => {
     const {activeEventId} = this.state
     const activeEventDetails = eventsList.find(
@@ -65,9 +68,11 @@ class Events extends Component {
     }
     return ''
   }
+
   setActiveEventId = id => {
     this.setState({activeEventId: id})
   }
+
   renderEventsList = () => {
     const {activeEventId} = this.state
     return (

@@ -1,10 +1,10 @@
 // Write your code here
 const EventItem = props => {
-  const {eventDetails, setActiveId, isActive} = props
+  const {eventDetails, setActiveEventId, isActive} = props
   const {imageUrl, name, location, id} = eventDetails
 
   const onClickEvent = () => {
-    setActiveId(id)
+    setActiveEventId(id)
   }
   return (
     <li>
