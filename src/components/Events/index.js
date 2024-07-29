@@ -97,7 +97,7 @@ class Events extends Component {
           {this.renderEventsList()}
         </div>
         <ActiveEventRegistrationDetails
-          ActiveEventRegistrationstatus={this.getActiveEventRegistrationStatus}
+          ActiveEventRegistrationStatus={this.getActiveEventRegistrationStatus()}
         />
       </div>
     )

@@ -19,8 +19,7 @@ const ActiveEventRegistrationDetails = props => {
         alt="registrations closed"
       />
 
-      <h1 className="registrations-closed-heading">
-        Registrations Are Closed Now
+      <h1 className="registrations-closed-hea">"Registrations Are Closed Now!" 
       </h1>
       <p className="">Stay tuned. We will reopen the registrations soon!</p>
     </div>
@@ -32,7 +31,7 @@ const ActiveEventRegistrationDetails = props => {
         src="https://assets.ccbp.in/frontend/react-js/events-regestered-img.png"
         alt="registered"
       />
-      <h1 className="">You have already registered for event</h1>
+      <h1 className="">"You have already registered for the event"</h1>
     </div>
   )
 
@@ -42,8 +41,8 @@ const ActiveEventRegistrationDetails = props => {
         src="https://assets.ccbp.in/frontend/react-js/events-register-img.png"
         alt="yet to register"
       />
-      <p className="description">A live Performance brings </p>
-      <button type="button">Registere Here</button>
+      <p className="description">"A live performance brings so much to your relationship with dance"</p>
+      <button type="button">Register Here</button>
     </div>
   )
 
